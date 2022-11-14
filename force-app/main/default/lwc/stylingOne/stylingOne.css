@@ -1,0 +1,5 @@
+@import 'c/sharedCSS';
+.one{
+    color:blue;
+    font-size:15px
+}

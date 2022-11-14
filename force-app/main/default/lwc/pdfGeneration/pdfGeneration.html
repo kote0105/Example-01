@@ -1,0 +1,14 @@
+<template>
+    <div class="container" style=" background:white; padding:16px;">
+        <img src={sbiLogo} style="margin-bottom:20px;height:40px; width:150px"/>
+        <div style="margin-bottom: 50px;">
+            <template for:each={formFields} for:item="fields">
+                <div key={fields.label} >
+                    <div style="display: inline-block"><strong>{fields.label} : </strong></div>
+                    <div style="display: inline-block;float:middle">{fields.value}</div>
+                </div>  
+            </template>
+        </div>
+    </div> 
+    <lightning-button variant="brand" label="generate pdf" onclick={pdfHandler}></lightning-button>
+</template>

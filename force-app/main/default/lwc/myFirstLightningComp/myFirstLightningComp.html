@@ -1,0 +1,235 @@
+<template>
+    Hello World...!<br/>
+    Hiii
+    <lightning-input label="Enter Name"  type="string"></lightning-input>
+    <lightning-button variant="brand-outline" label="Search"  onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+     <lightning-button variant="brand-outline" label="clear"  onclick={clicking} class="slds-m-left_large"></lightning-button>
+
+
+     <lightning-accordion active-section-name="A">
+        <lightning-accordion-section name="A" label="Accordion Title A">
+            <p>This is the content area for section A.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+        <lightning-accordion-section name="B" label="Accordion Title B">
+            <p>This is the content area for section B.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+        <lightning-accordion-section name="C" label="Accordion Title C">
+            <p>This is the content area for section C.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+    </lightning-accordion><br/>
+    <lightning-card  title="Hello">
+        <lightning-button label="New" slot="actions"></lightning-button>
+        <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+        <p slot="footer">Card footer></p>
+            
+    </lightning-card>
+    <div class="slds-m-vertical_medium">
+        <h1 class="slds-text-heading_small">Formatted Address</h1>
+        <p class="slds-text-body_regular">This component formats an address and automatically links it to Google Maps.</p>
+    </div>
+
+    <lightning-formatted-address
+        street="121 Spear St."
+        city="San Francisco"
+        country="US"
+        province="CA"
+        postal-code="94105"></lightning-formatted-address>
+        <div class="slds-box">
+            <h2 class="header">Date Formatting</h2>
+            <p><lightning-formatted-date-time value="1547250828000"></lightning-formatted-date-time></p>
+            <p><lightning-formatted-date-time value="1547250828000" year="2-digit" month="short" day="2-digit" weekday="narrow"></lightning-formatted-date-time></p>
+            <p><lightning-formatted-date-time value="1547250828000" year="2-digit" month="short" day="2-digit" weekday="long"></lightning-formatted-date-time></p>
+        </div>
+        <div class="slds-m-vertical_medium">
+            <h1 class="slds-text-heading_small">Formatted Email</h1>
+            <p class="slds-text-body_regular">Default behavior displays an email address with an email icon. The email address is automatically linked to open the default mail app.</p>
+        </div>
+<p><lightning-formatted-email value="email@example.com" ></lightning-formatted-email></p>
+
+<div class="slds-m-vertical_medium">
+        <h1 class="slds-text-heading_small">Formatted Email Without an Icon</h1>
+        <p class="slds-text-body_regular">Remove the icon using the <code>hide-icon</code> attribute.</p>
+    </div>
+    <p><lightning-formatted-email value="email@example.com" hide-icon></lightning-formatted-email></p>
+
+    <div class="slds-m-vertical_medium">
+            <h1 class="slds-text-heading_small">Formatted Email With a Label</h1>
+            <p class="slds-text-body_regular">Display custom text instead of the email address with the <code>label</code> attribute.</p>
+        </div>
+    <p><lightning-formatted-email value="email@example.com" label="Email Us!" ></lightning-formatted-email></p>
+    <div class="slds-box">
+        <h3 class="header">Default (Long Format)</h3>
+        <lightning-formatted-name
+                first-name="John"
+                last-name="Doe"
+                middle-name="Middleton"
+                informal-name="Jo"
+                suffix="The 3rd"
+                salutation="Mr."
+        >
+        </lightning-formatted-name>
+    </div>
+
+    <p><lightning-formatted-number value="1234.5678"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="1234.5678" maximum-fraction-digits="2"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="12.34" format-style="decimal" minimum-integer-digits="5"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="12.34" format-style="decimal" minimum-fraction-digits="5"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="12.34" format-style="decimal" minimum-significant-digits="5"></lightning-formatted-number></p>
+    <p><lightning-formatted-number value="123456789.123456789" minimum-fraction-digits="9"></lightning-formatted-number></p>
+
+    <p><lightning-formatted-text value="Email salesforce.com and info.salesforce.com" ></lightning-formatted-text></p>
+    <p><lightning-formatted-text value="Email info@salesforce.com" ></lightning-formatted-text></p>
+    <p><lightning-formatted-text value="Email salesforce.com and info.salesforce.com" linkify></lightning-formatted-text></p>
+    <p><lightning-formatted-text value="Email info@salesforce.com" linkify></lightning-formatted-text></p>
+
+    <p>Simple Time value: <lightning-formatted-time value="22:12:30.999"></lightning-formatted-time></p>
+    <p>Time value with Z suffix: <lightning-formatted-time value="22:12:30.999Z"></lightning-formatted-time></p>
+
+        <p>This example creates a simple layout with field headers.</p>
+    <div class="c-container">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <div class="header-column">
+                    <p class="field-title" title="Field 1">Field 1</p>
+                    <p>Name</p>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <div class="header-column">
+                    <p class="field-title" title="Field2 (3)">Field 2 (3)
+                        <lightning-button-icon icon-name="utility:down" variant="border-filled" size="small" alternative-text="More Actions"></lightning-button-icon>
+                    </p>
+                    <p>Eligibility</p>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <div class="header-column">
+                    <p class="field-title" title="Field 3">Field 3</p>
+                    <a href="#">Website</a>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <div class="header-column">
+                    <p class="field-title" title="Field 4">Field 4</p>
+                    <p>
+                        <span title="">Address</span>
+                    </p>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+   
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text"></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field with an initial value.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" value="ACME Inc."></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field with placeholder text.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" placeholder="type here..."></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field that is required.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" placeholder="type here..." required></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field that is disabled.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" placeholder="type here..." disabled></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field that is read-only.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" value="Stark Industries" readonly></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field that requires a minimum of 6 characters.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" placeholder="type here..." minlength="6"></lightning-input>
+            </div>
+        </div>
+    
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                A text input field that cannot have more than 10 characters.
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter some text" placeholder="type here..." maxlength="10"></lightning-input>
+            </div>
+        </div>
+    
+        <lightning-tabset>
+            <lightning-tab label="Item One">
+                One Content !
+            </lightning-tab>
+            <lightning-tab label="Item Two" title="2nd tab extended title">
+                Two Content !
+            </lightning-tab>
+            <lightning-tab label="Item Three">
+                Three Content !
+            </lightning-tab>
+        </lightning-tabset>
+    
+
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Apex Wire Imperatively Demo">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Call Apex Method" 
+            onclick={changeHandler} variant="brand"></lightning-button>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <div class="slds-box slds-box_xx-small" key={account.Id}>
+                        <p><strong>Name : </strong> {account.Name}</p>
+                        <p><strong>Type : </strong> {account.Type}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

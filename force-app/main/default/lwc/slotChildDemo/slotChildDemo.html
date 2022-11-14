@@ -1,0 +1,11 @@
+<template>
+    <p>What is your name ?</p>
+    <slot></slot>   <!--unnamed slot-->
+    <p>where is your location ?</p>
+    <slot name="first"></slot> <!--named slot-->
+    <p>what is your site name ?</p>
+    <slot name="second"></slot>
+    <footer class="slds-card__footer slds-hide">
+        <slot name="footer" onslotchange={handleFooterChange}></slot>
+    </footer>
+</template>

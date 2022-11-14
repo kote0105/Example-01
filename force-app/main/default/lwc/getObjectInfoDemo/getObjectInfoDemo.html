@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="getObjectInfo Demo">
+        <div class="slds-m-around_medium">
+            <template if:true={objectInfo.data}>
+                <div>defaultRecordTypeId: {objectInfo.data.defaultRecordTypeId}</div>
+                <div>ApiName: {objectInfo.data.apiName}</div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="getObjectInfos Demo"> 
+
+        <div class="slds-m-around_medium"> 
+
+            <template if:true={objectInfos}> 
+                Here data will come
+
+                <!-- <template for:each={objectInfos.results} for:item="obj"> 
+
+                    <div key={obj.result.apiName}> 
+
+                        <div>Object Api Name - {obj.result.apiName}</div> 
+
+                        <div>defaultRecordTypeId - {obj.result.defaultRecordTypeId}</div> 
+
+                    </div> 
+
+                </template>  -->
+
+            </template> 
+
+        </div> 
+
+    </lightning-card> 
+
+</template> 

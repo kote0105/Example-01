@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Apex Wire Imperatively With Parameters Demo">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Search Account" type="search"  
+            value={searchAccount} onchange={searchHandler}></lightning-input>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <div class="slds-box slds-box_xx-small" key={account.Id}>
+                        <p><strong>Name : </strong> {account.Name}</p>
+                        <p><strong>Type : </strong> {account.Type}</p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
