@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Adimission</label>
+    <nameField>
+        <displayFormat>ADN-{0000}</displayFormat>
+        <label>Adimssion Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Adimissions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>Student_Details</fullName>
+        <fields>Name</fields>
+        <fields>Student_Name__c</fields>
+        <fields>Father_s_Name__c</fields>
+        <fields>Mother_s_Name__c</fields>
+        <fields>Date_of_Birth__c</fields>
+        <fields>Age__c</fields>
+        <fields>Male__c</fields>
+        <fields>Female__c</fields>
+        <fields>Mobile_No__c</fields>
+        <label>Student Details</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Age</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Male__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Male</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pre-School</fullName>
+                    <default>false</default>
+                    <label>Pre-School</label>
+                </value>
+                <value>
+                    <fullName>Class 1 to 5</fullName>
+                    <default>false</default>
+                    <label>Class 1 to 5</label>
+                </value>
+                <value>
+                    <fullName>Class 6 to 10</fullName>
+                    <default>false</default>
+                    <label>Class 6 to 10</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Female__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Female</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Standard__c</fullName>
+        <description>student which class is admitted</description>
+        <externalId>false</externalId>
+        <label>Standard</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Class__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Nursery</fullName>
+                    <default>false</default>
+                    <label>Nursery</label>
+                </value>
+                <value>
+                    <fullName>LKG</fullName>
+                    <default>false</default>
+                    <label>LKG</label>
+                </value>
+                <value>
+                    <fullName>UKG</fullName>
+                    <default>false</default>
+                    <label>UKG</label>
+                </value>
+                <value>
+                    <fullName>CLASS I</fullName>
+                    <default>false</default>
+                    <label>CLASS I</label>
+                </value>
+                <value>
+                    <fullName>CLASS II</fullName>
+                    <default>false</default>
+                    <label>CLASS II</label>
+                </value>
+                <value>
+                    <fullName>CLASS III</fullName>
+                    <default>false</default>
+                    <label>CLASS III</label>
+                </value>
+                <value>
+                    <fullName>CLASS IV</fullName>
+                    <default>false</default>
+                    <label>CLASS IV</label>
+                </value>
+                <value>
+                    <fullName>CLASS V</fullName>
+                    <default>false</default>
+                    <label>CLASS V</label>
+                </value>
+                <value>
+                    <fullName>CLASS VI</fullName>
+                    <default>false</default>
+                    <label>CLASS VI</label>
+                </value>
+                <value>
+                    <fullName>CLASS VII</fullName>
+                    <default>false</default>
+                    <label>CLASS VII</label>
+                </value>
+                <value>
+                    <fullName>CLASS VIII</fullName>
+                    <default>false</default>
+                    <label>CLASS VIII</label>
+                </value>
+                <value>
+                    <fullName>CLASS IX</fullName>
+                    <default>false</default>
+                    <label>CLASS IX</label>
+                </value>
+                <value>
+                    <fullName>CLASS X</fullName>
+                    <default>false</default>
+                    <label>CLASS X</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Pre-School</controllingFieldValue>
+                <valueName>Nursery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pre-School</controllingFieldValue>
+                <valueName>LKG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pre-School</controllingFieldValue>
+                <valueName>UKG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 1 to 5</controllingFieldValue>
+                <valueName>CLASS I</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 1 to 5</controllingFieldValue>
+                <valueName>CLASS II</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 1 to 5</controllingFieldValue>
+                <valueName>CLASS III</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 1 to 5</controllingFieldValue>
+                <valueName>CLASS IV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 1 to 5</controllingFieldValue>
+                <valueName>CLASS V</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 6 to 10</controllingFieldValue>
+                <valueName>CLASS VI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 6 to 10</controllingFieldValue>
+                <valueName>CLASS VII</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 6 to 10</controllingFieldValue>
+                <valueName>CLASS VIII</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 6 to 10</controllingFieldValue>
+                <valueName>CLASS IX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Class 6 to 10</controllingFieldValue>
+                <valueName>CLASS X</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Mobile_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile No</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Student_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Student Name</label>
+        <length>30</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Birth</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Father_s_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Father&apos;s Name</label>
+        <length>30</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mother_s_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Mother&apos;s Name</label>
+        <length>30</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>NotBlank</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Father_s_Name__c )</errorConditionFormula>
+        <errorMessage>jb</errorMessage>
+    </validationRules>
+</CustomObject>
